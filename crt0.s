@@ -62,7 +62,7 @@ _start:
 	mflr r14
 	std r14, -0x130(r1)
 
-	# Determine where the stack pointer should be moved to (16-byte alignment down, at least 8 bits free)
+	# Determine where the stack pointer should be moved to (16-byte alignment down, at least 8 bytes free)
 	subi r14, r1, 0x140
 	lis r15, 0xFFFF
 	ori r15, r15, 0xFFF0
